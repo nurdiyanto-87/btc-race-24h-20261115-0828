@@ -101,7 +101,7 @@ def cross_up(s):
 
 
 def on_batch(state, batch):
-    for bar in batch.bars:
+    for bar in batch["bars"]:
         if bar["symbol"] != SYMBOL:
             continue
         closes.append(int(bar["c"]))
